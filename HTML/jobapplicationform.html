@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Create a jobapplicationform.html
+   create input fields for name, email,contact,address, coverletter,gender, education(selectoption), company(input text) and Experrience(select-option)
+   ,skills province(select-option)and submission button. -->
+   <h1>Job Application Form</h1>
+
+   <form action="" method="post">
+    <label for="uname">Username</label><br>
+    <input type="text" name="Username" id="uname" placeholder="Your name" required><br><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" name="Email" id="email" placeholder="abc@gmail.com" required><br><br>
+
+    <label for="contact">Contact</label><br>
+    <input type="tel" name="Contact" id="contact" placeholder="9**********" required><br><br>
+
+
+
+    <label for="Address">Address</label><br>
+    <input type="text" name="Address" id="Address" placeholder="Kathmandu" required><br><br>
+
+    <label for="Cover-letter">Cover-letter</label><br>
+        <textarea rows="10" cols="50" name="bio" id="Cover-letter"></textarea> <br><br>
+
+    <label for="">Gender</label>
+    <br>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="Others" value="Others">
+    <label for="Others">Others</label>
+    <br><br>
+
+    <label for="skills">Skills</label>
+    <br>
+    <input type="checkbox" name="skills" id="python" value="python">
+    <label for="python">Python</label>
+    <br>
+    <input type="checkbox" name="skills" id="networking" value="networking">
+    <label for="networking">Networking</label>
+    <br>
+    <input type="checkbox" name="skills" id="Database" value="Database">
+    <label for="Database">Database</label>
+    <br>
+    <input type="checkbox" name="skills" id="Javascript" value="Javascript">
+    <label for="Javascript">Javascript</label>
+    <br>
+    <input type="checkbox" name="skills" id="MERN" value="MERN">
+    <label for="MERN">MERN</label>
+    <br>
+    <input type="checkbox" name="skills" id="Typescript" value="Typescript">
+    <label for="Typescript">Typescript</label>
+    <br><br>
+
+    
+
+    <label for="">Education</label>
+    <select name="Education" id="education">
+    <optgroup>
+      <option value="SLC/SEE">SLC/SEE</option>
+      <option value="+2/Diploma/A level">+2/Diploma/A level</option>
+      <option value="Bachelor">Bachelor</option>
+      <option value="Master">Master</option>
+      <option value="PHD">PHD</option>
+
+    </optgroup>
+    </select>
+    <br> <br>
+
+    <label for="company">Company</label>
+    <input type="text" placeholder="ABC Company" name="Company" id="company" >
+    <br><br>
+
+    
+
+    <label for="">Experience</label>
+    <select name="Experience" id="experience">
+    <optgroup>
+     <option value="intern">Intern</option>
+     <option value="+1">+1 year of experience</option>
+     <option value="+2">+2 years or more than 2 years</option>
+    </optgroup>
+    </select>
+    <br> <br>
+    
+
+
+
+    <label for="">Province</label>
+    <select name="Province" id="province">
+    <optgroup>
+      <option value="1">Koshi</option>
+      <option value="2">Madhesh</option>
+      <option value="3">Bagmati</option>
+      <option value="4">Gandaki</option>
+      <option value="5">Lumbini</option>
+      <option value="6">Karnali</option>
+      <option value="7">Sudhurpashchim</option>
+    </optgroup>
+    </select>
+    <br> <br>
+
+    <label for="cv">CV</label>
+    <input type="file" required id="" multiple accept=".png .pdf .jpeg" .jpg>
+
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+
+
+
+    
+
+
+
+
+   </form>
+
+
+</body>
+</html>
