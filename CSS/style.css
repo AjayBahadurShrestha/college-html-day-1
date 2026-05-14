@@ -5,3 +5,16 @@ div{
 span{
   color: blueviolet;
 }
+
+*{
+  background-color: lightblue;
+  color: darkcyan;
+}
+
+.title{
+  color: rgb(0, 0, 0);
+}
+
+#title1{
+  color: blue;
+}
