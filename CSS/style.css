@@ -1,3 +1,7 @@
-p{
+div{
   background-color: mediumslateblue;
+  color: white;
+}
+span{
+  color: blueviolet;
 }
