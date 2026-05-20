@@ -16,6 +16,25 @@
   background-color: rgba(255, 0, 0, 1);
 }
 
+/* HSL - Hue- 0-360,Saturation- 0%-100%,Light- 0%-100% 
+Hue - represents color , 0/360 -red, 120-green, 240- blue Saturation -0% - grey color, 100% - full color
+Light- 0%- black, 50%-balanced, 100%-white
+hsla() - here a refers alpha same like rgba */
 #hsl{
-  background-color: hsl(10, 18, 80);
+  background-color: hsl(360, 100%, 50%);
+}
+
+#hslgreen{
+  background-color: hsl(120, 100%, 50%);
+}
+#hslblue{
+  background-color: hsl(240, 100%, 50%);
+}
+
+#saturation{
+  background-color: hsl(0,100%,50%);
+}
+
+#light{
+  background-color: hsl(0,100%,50%);
 }
