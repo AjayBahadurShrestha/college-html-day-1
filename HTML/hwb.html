@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" href="../IMAGE/favicon.ico" type="image/x-icon" >
   <style>
     .outer{
+      font-size: 40px;
       width: 400px;
       height: 400px;
       border: 1px solid black;
@@ -14,19 +16,52 @@
     .inner{
       width: 50%;
       height: 50%;
-      border: 1px dotted black;
+      border: 1px dashed black;
+    }
+
+    .outer1{
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+    }
+    .inner1{
+      width: 25vw;
+      height: 25vh;
+      border: 1px solid black;
     }
   </style>
 </head>
 <body>
   <h1>Height, Width and Border</h1>
+  <p>Absolute Unit vs Relative Unit</p>
+  <!-- Absolute Unit vs Relative Unit -->
+   <!-- Absolute Fixed Unit: ,px, inch, cm, mm -->
+    <!-- Relative Unit- Not Fixed Unit:
+     %, rem, em, vw, vh -->
+     <!-- 1rem- means font size of root element
+      1em - means font size of parent element
+      100vh - viewport height of screen
+      100v - viewport width of screen
+      100% - means 100% size of parent attribute -->
   <div class="outer">
     <p>Outer Box</p>
     <div class="inner">
       <p>Inner Box</p>
+      <p style="font-size: 1.5rem;">
+        Rem Unit.</p>
+      <p style="font-size: 0.5em;">EM Unit</p>
 
     </div>
   </div>
+
+  <h4>Viewport Width (vw) and Viewport Height (vh)</h4>
+  <div class="outer1">
+    <div class="inner1">
+
+    </div>
+     <img src="../IMAGE/favicon.ico" alt="">
+  </div>
+ 
   
 </body>
 </html>
