@@ -1,0 +1,25 @@
+table {
+  border-bottom: 1px solid black;  
+  border-top: 1px solid black;  
+  border-collapse: collapse; 
+  width: 100%;              
+}
+
+th, td {
+  border-bottom: 1px solid black;   
+  padding: 8px;              
+  text-align: left;       
+}
+
+.poster-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.poster-small {
+  width: 80px;          
+  height: auto;         
+  object-fit: contain; 
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
