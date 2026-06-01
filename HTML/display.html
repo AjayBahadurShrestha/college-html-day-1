@@ -12,6 +12,29 @@
     span{
       background-color: red;
     }
+
+    .inline{
+      display: inline;
+    }
+
+    .inline-block{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+    }
+    .block{
+      display: block;
+    }
+    .none{
+      display: none;
+    }
+
+    .box{
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      border-radius: 40px;
+    }
   </style>
 </head>
 <body>
@@ -28,6 +51,55 @@
   Inline Tag - Covers the space of the element. If the tag is inline element then it appeears in same line.
   Example: img, span, input, etc.
   -->
+  <hr>
+  <h3>Inline</h3>
+  <p class="inline">
+    <span>Text1</span>
+    <span>Text2</span>
+    <span>Text3</span>
+  </p>
+  <hr>
+  <h3>Inline-Block</h3>
+    <p class="inline-block">
+    <span>Text1</span>
+    <span>Text2</span>
+    <span>Text3</span>
+    </p>
+  <hr>
+  <h3>Block</h3>
+    <p class="block">
+    <span style="display: block;">Text1</span>
+    <span>Text2</span>
+    <span>Text3</span>
+  </p>
+  <hr>
+  <h3>None</h3>
+
+  <p class="none">
+    <span >Text1</span>
+    <span>Text2</span>
+    <span>Text3</span>
+  <hr>
+
+  <!-- 
+  display:
+  inline-block: converts block-level element to inline and has height and width property(unlinkeinline)
+  
+  none: hides the element.
+
+
+  inline: width and height won't work -->
+  <h3>Border Radius</h3>
+  <div class="box">
+
+  </div>
+  <br>
+
+  <div class="box" style="border-radius: 50%;">
+
+  </div>
+
+
 
   
 </body>
