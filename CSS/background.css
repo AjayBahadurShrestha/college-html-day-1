@@ -37,3 +37,9 @@ body{
   background-image: url(../IMAGE/inception.jpg);
   background-size: cover  ;
 }
+#contain{
+  background-image: url(../IMAGE/harley-quinn-anime-girl-marvel-phone-349@5@j-thumb.jpg);
+  background-size: contain  ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
