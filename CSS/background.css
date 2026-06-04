@@ -1,0 +1,39 @@
+body{
+  background-image: url('../IMAGE/interstella.jpg');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment:fixed;
+}
+
+/* Background-size: for the size of an background image 
+                    values can be unit or (auto/cover/contain)
+                    
+  Backgroud-repeated: defines how many times image will be repeated. Possible values (repeat-x[reeats image in x-axis], repeat-y[repeats image in y-axis], no-repeat)
+  
+  Background-attachment - defines whetther a image is scrollable or fixed.
+  
+  Background-position -to fix the image in certain position of the screen.*/
+
+.container{
+  height: 1000px;
+  width: 300px;
+  background-color: darkslateblue;
+
+}
+
+.bg-container{
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+#auto{
+  background-image: url(../IMAGE/night-beach-couple-sparkler-digital-art-21@0@j-thumb.jpg);
+  background-size: auto;
+}
+
+#cover{
+  background-image: url(../IMAGE/inception.jpg);
+  background-size: cover  ;
+}
