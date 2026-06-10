@@ -12,6 +12,10 @@ ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
   background-color: green;
   color: white;
 }
@@ -19,4 +23,27 @@ ul{
   display: flex;
   gap: 50px;
   
+}
+
+li:hover{
+  text-decoration: underline solid 1px;
+  font-weight: 500;
+}
+
+.logo{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.dropdown{
+  position: absolute;
+  background-color: green;
+  margin: 0px;
+  padding:0px;
+  min-width: 150px;
+  display: none;
+}
+
+li:hover .dropdown{
+  display: block;
 }
