@@ -1,0 +1,28 @@
+/* Portfolio */
+body{
+  padding: 0px;
+  margin: 0px;
+}
+/* Navigation Menu */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: navy;
+}
+
+.links{
+  list-style-type:none;
+  display: flex;
+  gap: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: navy;
+}
+
+span{
+  font-size: 20px;
+  font-weight: 700;
+}
