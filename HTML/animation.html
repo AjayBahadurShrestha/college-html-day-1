@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes myAnimation {
+      from {
+        background-color: orange;
+      }
+      to {
+        background-color: green;
+      }
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      animation: myAnimation 2s ease-in 1s infinite;
+    }
+
+    @keyframes newAnimation {
+      0% {
+        background-color: fuchsia;
+        transform: translate(0, 0);
+      }
+      25% {
+        background-color: aqua;
+        transform: translate(200px, 0);
+      }
+      50% {
+        background-color: tomato;
+        transform: translate(200px, 200px);
+      }
+      75% {
+        background-color: black;
+        transform: translate(0, 200px);
+      }
+      100% {
+        background-color: blueviolet;
+        transform: translate(0, 0);
+      }
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: fuchsia;
+      position: relative;
+      animation: newAnimation 4s linear infinite; /* slower & smoother */
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation Style</h1>
+  <h3>Animation with Keyframes - Start and End</h3>
+  <div class="box"></div>
+
+  <h3>Animation with Keyframes - Smooth like a car</h3>
+  <div class="box1"></div>
+</body>
+</html>

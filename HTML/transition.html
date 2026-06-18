@@ -9,7 +9,26 @@
       width: 100px;
       height: 100px;
       background-color: orange;
-    
+      /* 
+        Syntax:transition:property duration transition-timing-function delay;
+      */
+      transition: background-color, 2s steps(4, jump-end) 1s;
+    }
+
+    .box:hover{
+      background-color: skyblue;
+    }
+    /* Multiple transition */
+    .box1{
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+      transition: width 1s linear, height 1s ease-out, background-color 2s ease-in 1s;
+    }
+    .box1:hover{
+      width: 200px;
+      height: 200px;
+      background-color: indigo;
     }
 
   </style>
@@ -21,6 +40,7 @@
   <div class="box">
 
   </div>
-  
+    <h3>Multiple Transition</h3>
+    <div class="box1"></div>
 </body>
 </html>
