@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal Page</title>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <h2>Selection and Manipulation</h2>
+  <h3 id="animalHeading">Animals<span style="visibility:hidden;">List</span></h3>
+
+  <p class="animal">Lion</p>
+  <p class="animal">Tiger</p>
+  <p class="animal">Elephant</p>
+  <p class="animal">Giraffe</p>
+  <p class="animal">Zebra</p>
+  <p class="animal">Panda</p>
+
+  <img id="img" alt="Animal Image">
+
+  <script>
+    // Insert text into h1
+    let title = document.getElementById("title");
+    title.innerText = "Animal List";
+
+    // Select heading
+    let heading = document.getElementById("animalHeading");
+    console.log("innerHTML:", heading.innerHTML);
+    console.log("innerText:", heading.innerText);
+    console.log("textContent:", heading.textContent);
+
+    // Manipulate heading text
+    heading.innerText = "Wildlife Animals";
+
+    // Select all animals
+    let animals = document.getElementsByClassName("animal");
+
+    // Style Lion
+    animals[0].style.color = "goldenrod";
+    animals[0].style.fontWeight = "bold";
+
+    // Style Tiger
+    animals[1].style.backgroundColor = "orange";
+    animals[1].style.color = "black";
+
+    // Style Elephant
+    animals[2].style.backgroundColor = "lightgray";
+    animals[2].style.color = "black";
+
+    // Style Giraffe
+    animals[3].style.color = "brown";
+
+    // Style Zebra
+    animals[4].style.backgroundColor = "black";
+    animals[4].style.color = "white";
+
+    // Style Panda
+    animals[5].style.backgroundColor = "white";
+    animals[5].style.color = "black";
+
+    // Add one image (default Lion)
+    let image = document.getElementById("img");
+    image.src = "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg";
+    image.style.width = "250px";
+    image.style.border = "2px solid black";
+
+    // Change image when clicking an animal
+    animals[1].onclick = () => {
+      image.src = "https://media.gettyimages.com/id/2164306767/vector/vector-illustration-of-happy-tiger-cub-walking-with-a-smile-black-and-white-drawing-for.jpg";
+    };
+    animals[2].onclick = () => {
+      image.src = "https://img.magnific.com/free-vector/cute-simple-elephant-cartoon-isolated_1308-140154.jpg";
+    };
+    animals[4].onclick = () => {
+      image.src = "https://media.craiyon.com/2025-07-17/rGmZDQFHTZS6PiLPPxg2DA.webp";
+    };
+  </script>
+</body>
+</html>

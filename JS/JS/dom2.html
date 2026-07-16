@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Day 2</h1>
+    <h2>Selection and Manipulation</h2>
+    <h3 id="footballTeams">Football<span style="visibility: hidden;">Teams</span></h3>
+    <p class="teams">Argentina</p>
+    <p class="teams">Belgium</p>
+    <p class="teams">Spain</p>
+    <p class="teams">France</p>
+    <p class="teams">Norway</p>
+    <img id="img" src="" alt="">
+</body>
+<!-- HTML Selectors -->
+ <script>
+// HTML SELECTORS
+/*
+1. By id
+2. By Class
+3. By TagName
+4. By query selctor
+*/
+// by id
+let TitleFootball = document.getElementById("footballTeams");
+console.log(TitleFootball)
+
+// Manipulate Text using DOM
+
+/*
+1. innerHTML - display html (if present) inside the element
+2. innerText - display text only (not hidden)
+3. textContent - display text both hidden and non hidden.
+*/
+console.log("innerHTML", TitleFootball.innerHTML);
+console.log("innerText", TitleFootball.innerText);
+console.log("textContent", TitleFootball.textContent);
+
+// Manipulation using innerText
+TitleFootball.innerText = "Kabaadi Teams";
+
+// Manipulating Style
+//  Change Color Argentina and Spain [both in p tag with same class]
+let teams = document.getElementsByClassName("teams");
+console.log(teams);
+
+// select argentina
+console.log(teams[0]);
+
+// select spain
+console.log(teams[2]);
+
+// Change Style of Argentina - blue,white
+teams[0].style.backgroundColor ="skyblue";
+teams[0].style.color = "white";
+
+// Change Style of Spain - red, yellow
+teams[2].style.backgroundColor ="red";
+teams[2].style.color = "yellow";
+
+// Change Attribute
+let image = document.getElementById("img");
+image.src = "https://www.aljazeera.com/wp-content/uploads/2022/10/GettyImages-1400154305.jpg?resize=1800%2C1800"
+
+image.style.width="200px";
+ </script>
+
+<!-- create an animal.html. The htnl file should include 
+ empty h1(id=title), p(class= animal), img(id =img). in empty h1 insert text ="Animal list", in empty p tag add 5-6 animal name, in empty img tags and image of the animal using DOM -->
+
+</html>
